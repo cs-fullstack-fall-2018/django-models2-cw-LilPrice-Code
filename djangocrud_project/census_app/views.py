@@ -23,5 +23,6 @@ def get_random_salary():
 
 
 def index(request):
+    print(Respondent.object.all())
     return HttpResponse("<h1>Welcome to the Census Application!</h1><h4>" + get_random_name() + "</h4><h4>" + str(
         get_random_age()) + "</h4><h4>" + str(get_random_salary()))
